@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LeoTvShowApp</string>
+    <string name="activity_main_loading_text">Loading…</string>
+    <string name="main_menu_tv_show">Shows</string>
+    <string name="main_menu_people">People</string>
+    <string name="main_menu_favorite">Favorites</string>
+
+    <string name="show_detail_episodes">Episodes</string>
+    <string name="show_detail_episodes_season">Season %s</string>
+    <string name="show_detail_original_schedule"><![CDATA[<b>Original schedule:</b> %s]]></string>
+    <string name="show_episode_season_number"><![CDATA[<b>Episode #</b>%1$d, <b>Season #</b>%2$d]]></string>
+    <string name="show_search_hint">Search show…</string>
+    <string name="person_detail_cast_credits">Cast Credits</string>
+
+    <string name="tv_show_detail_menu_add_to_favorites">Add to favorites</string>
+    <string name="add_to_favorite_text_off">Add to Favorite</string>
+    <string name="add_to_favorite_text_on">Remove from Favorite</string>
+
+    <string name="error_handler_default_message">Oops!</string>
+    <string name="error_handler_default_button">Try Again</string>
+</resources>

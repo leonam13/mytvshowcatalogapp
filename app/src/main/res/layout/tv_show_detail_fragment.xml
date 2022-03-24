@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/itemText"
+                style="?textAppearanceHeadline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Tv Show" />
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="12:16"
+                app:layout_constraintStart_toStartOf="@id/itemText"
+                app:layout_constraintTop_toBottomOf="@id/itemText" />
+
+            <ToggleButton
+                android:id="@+id/addToFavoritesTb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/violet_200"
+                android:drawableEnd="@drawable/add_to_fav_bg"
+                android:drawablePadding="8dp"
+                android:paddingHorizontal="8dp"
+                android:textOff="@string/add_to_favorite_text_off"
+                android:textOn="@string/add_to_favorite_text_on"
+                app:layout_constraintStart_toStartOf="@id/itemImage"
+                app:layout_constraintTop_toBottomOf="@id/itemImage" />
+
+            <TextView
+                android:id="@+id/showGenre"
+                style="?textAppearanceBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@id/addToFavoritesTb"
+                app:layout_constraintTop_toBottomOf="@id/addToFavoritesTb"
+                tools:text="Genre, Genre" />
+
+            <TextView
+                android:id="@+id/showSchedule"
+                style="?textAppearanceBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/itemImage"
+                app:layout_constraintTop_toBottomOf="@id/showGenre"
+                tools:text="Time" />
+
+            <TextView
+                android:id="@+id/showSummary"
+                style="?textAppearanceBody1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/itemImage"
+                app:layout_constraintTop_toBottomOf="@id/showSchedule"
+                tools:text="Summary" />
+
+            <LinearLayout
+                android:id="@+id/showEpisodesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/itemImage"
+                app:layout_constraintTop_toBottomOf="@id/showSummary"
+                tools:visibility="visible">
+
+                <TextView
+                    style="?textAppearanceHeadline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_detail_episodes" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/showEpisodesBySeasonRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_episode_season" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

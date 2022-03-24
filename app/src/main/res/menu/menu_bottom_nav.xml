@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tvShowAllFragment"
+        android:icon="@drawable/ic_tv_24"
+        android:title="@string/main_menu_tv_show" />
+
+    <item
+        android:id="@+id/tvShowPeopleFragment"
+        android:icon="@drawable/ic_people_outline_24"
+        android:title="@string/main_menu_people" />
+
+    <item
+        android:id="@+id/tvShowFavoriteListFragment"
+        android:icon="@drawable/ic_favorite_border_24"
+        android:title="@string/main_menu_favorite" />
+</menu>

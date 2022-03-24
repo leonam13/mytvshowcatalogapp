@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/add_to_fav_bg.xml" value="0.2435" />
+        <entry key="app/src/main/res/drawable/glide_error.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/glide_person_fallback.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/glide_placeholder.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/glide_show_fallback.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2435" />
+        <entry key="app/src/main/res/drawable/ic_favorite_24.xml" value="0.2435" />
+        <entry key="app/src/main/res/drawable/ic_favorite_border_24.xml" value="0.2435" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/favorite_show_fragment.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/fragment_all_tv_show.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/fragment_detail_tv_show.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/item_episode.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/item_episode_season.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/item_favorite_show.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/item_tv_show.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/people_search_fragment.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/person_detail_fragment.xml" value="0.3254934901301974" />
+        <entry key="app/src/main/res/layout/simple_item_arrow_right.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/simple_item_image_text.xml" value="1.0" />
+        <entry key="app/src/main/res/layout/tv_show_all_fragment.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/tv_show_detail_fragment.xml" value="0.25941939468807906" />
+        <entry key="app/src/main/res/layout/tv_show_episode_fragment.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/tv_show_search_fragment.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/menu/menu_bottom_nav.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/menu/menu_tv_show_detail.xml" value="0.4036458333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

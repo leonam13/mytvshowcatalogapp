@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/tvShowAllFragment">
+
+    <fragment
+        android:id="@+id/tvShowAllFragment"
+        android:name="com.example.leotvshowapp.show.TvShowAllFragment"
+        tools:layout="@layout/tv_show_all_fragment">
+
+        <action
+            android:id="@+id/all_to_detail_action"
+            app:destination="@id/showDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showDetailFragment"
+        android:name="com.example.leotvshowapp.show.TvShowDetailFragment"
+        tools:layout="@layout/tv_show_detail_fragment">
+
+        <argument
+            android:name="show"
+            app:argType="com.example.leotvshowapp.data.model.TvShow" />
+
+        <action
+            android:id="@+id/show_to_episode_action"
+            app:destination="@id/episodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/episodeFragment"
+        android:name="com.example.leotvshowapp.show.TvShowEpisodeFragment"
+        tools:layout="@layout/tv_show_episode_fragment">
+
+        <argument
+            android:name="episode"
+            app:argType="com.example.leotvshowapp.data.model.Episode" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tvShowPeopleFragment"
+        android:name="com.example.leotvshowapp.people.PeopleSearchFragment"
+        tools:layout="@layout/people_search_fragment">
+
+        <action
+            android:id="@+id/people_to_detail_action"
+            app:destination="@id/personDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/personDetailFragment"
+        android:name="com.example.leotvshowapp.people.PersonDetailFragment"
+        tools:layout="@layout/person_detail_fragment">
+
+        <argument
+            android:name="person"
+            app:argType="com.example.leotvshowapp.data.model.Person" />
+
+        <action
+            android:id="@+id/person_detail_to_show_detail_action"
+            app:destination="@id/showDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tvShowFavoriteListFragment"
+        android:name="com.example.leotvshowapp.favorites.FavoriteShowsFragment"
+        tools:layout="@layout/favorite_show_fragment">
+
+        <action
+            android:id="@+id/favorites_to_show_detail_action"
+            app:destination="@id/showDetailFragment" />
+    </fragment>
+</navigation>
